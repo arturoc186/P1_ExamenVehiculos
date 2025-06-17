@@ -15,6 +15,10 @@ public class Coche extends Vehiculo{
         this.tipoCombustible = tipoCombustible;
     }
 
+    public Coche() {
+        super();
+    }
+
     public int getNumPuertas() {
         return numPuertas;
     }

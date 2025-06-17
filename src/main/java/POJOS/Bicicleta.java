@@ -5,6 +5,10 @@ public class Bicicleta extends Vehiculo{
     private String tipo;
     private boolean tieneCambio;
 
+    public Bicicleta() {
+
+    }
+
     public boolean isTieneCambio() {return tieneCambio;}
     public void setTieneCambio(boolean tieneCambio) {this.tieneCambio = tieneCambio;}
     public String getTipo() {return tipo;}

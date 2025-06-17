@@ -5,6 +5,10 @@ public class Moto extends Vehiculo{
     private int cilindrada;
     private boolean tieneSidecar;
 
+    public Moto() {
+
+    }
+
     public int getCilindrada() {return cilindrada;}
     public void setCilindrada(int cilindrada) {this.cilindrada = cilindrada;}
     public boolean isTieneSidecar() {return tieneSidecar;}

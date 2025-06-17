@@ -12,6 +12,10 @@ public class Vehiculo {
 
     public static List<Vehiculo> vehiculos = new ArrayList<>();
 
+    public Vehiculo() {
+
+    }
+
     public int getId() {return id;}
     public void setId(int id) {this.id = id;}
     public String getMarca() {return marca;}

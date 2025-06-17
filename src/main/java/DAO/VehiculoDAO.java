@@ -2,10 +2,7 @@ package DAO;
 
 import POJOS.Vehiculo;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +25,8 @@ public class VehiculoDAO {
                 Vehiculo v = new Vehiculo(id, marca, modelo, precio);
 
                 vehiculos.add(v);
-        }
+        }}
         return vehiculos;
     }
-}}
+}
+
