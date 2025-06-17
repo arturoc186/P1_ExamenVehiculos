@@ -2,6 +2,7 @@ module com.example.p1_examenvehiculos {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires jdk.jfr;
 
     opens Principal     to javafx.fxml;
     opens Controladores to javafx.fxml;

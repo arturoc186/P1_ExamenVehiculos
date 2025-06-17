@@ -16,6 +16,6 @@
             <TableColumn fx:id="colPrecio" prefWidth="50.0" text="Precio" />
         </columns>
       </TableView>
-      <Button layoutX="20.0" layoutY="348.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold;" text="Eliminar de la Base de Datos" />
+      <Button fx:id="btnEliminar" layoutX="20.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnEliminarClick" prefHeight="26.0" prefWidth="234.0" style="-fx-background-color: #800000; -fx-text-fill: white; -fx-font-weight: bold;" text="Eliminar de la Base de Datos" />
    </children>
 </AnchorPane>
