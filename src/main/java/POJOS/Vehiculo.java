@@ -1,11 +1,16 @@
 package POJOS;
 
-public abstract class Vehiculo {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Vehiculo {
 
     private int id;
     private String marca;
     private String modelo;
     private float precio;
+
+    public static List<Vehiculo> vehiculos = new ArrayList<>();
 
     public int getId() {return id;}
     public void setId(int id) {this.id = id;}
