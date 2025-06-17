@@ -1,9 +1,9 @@
-package com.example.p1_examenvehiculos;
+package Controladores;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class MainController {
     @FXML
     private Label welcomeText;
 
