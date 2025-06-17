@@ -15,9 +15,25 @@ public class Coche extends Vehiculo{
         this.tipoCombustible = tipoCombustible;
     }
 
+    public int getNumPuertas() {
+        return numPuertas;
+    }
+
+    public void setNumPuertas(int numPuertas) {
+        this.numPuertas = numPuertas;
+    }
+
+    public String getTipoCombustible() {
+        return tipoCombustible;
+    }
+
+    public void setTipoCombustible(String tipoCombustible) {
+        this.tipoCombustible = tipoCombustible;
+    }
+
     @Override
     public String getDescripcion(){
-        return "Se trata de un coche.";
+        return "Se trata de un coche de la marca " +getMarca() + "con " +getNumPuertas() + "puertas.";
     }
 
 

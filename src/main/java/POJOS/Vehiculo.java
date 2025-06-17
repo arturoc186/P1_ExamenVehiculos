@@ -24,6 +24,6 @@ public abstract class Vehiculo {
     }
 
     public String getDescripcion(){
-        return "a";
+        return "";
     }
 }

@@ -16,6 +16,6 @@ public class Moto extends Vehiculo{
 
     @Override
     public String getDescripcion(){
-        return "Se trata de una motocicleta de...";
+        return "Se trata de una motocicleta de la marca " +getMarca() + "con una cilindrada de " +getCilindrada();
     }
 }
