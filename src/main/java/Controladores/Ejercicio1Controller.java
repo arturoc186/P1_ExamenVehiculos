@@ -88,6 +88,8 @@ public class Ejercicio1Controller implements Initializable {
                 coche.setNumPuertas(Integer.parseInt(fieldNumPuertas.getText()));
                 coche.setTipoCombustible(chkCombustible.getValue().toString());
 
+            obs.add(coche);
+            tablaVehiculos.setItems(obs);
             CocheDAO.insertar(coche);
 
         } else if (chkTipo.getValue().equals("Moto")) {
@@ -101,6 +103,8 @@ public class Ejercicio1Controller implements Initializable {
             moto.setCilindrada(Integer.parseInt(fieldCilindrada.getText()));
             moto.setTieneSidecar(chkSidecar.isSelected());
 
+            obs.add(moto);
+            tablaVehiculos.setItems(obs);
             MotoDAO.insertar(moto);
 
         } else {
@@ -113,6 +117,8 @@ public class Ejercicio1Controller implements Initializable {
             bici.setTipo(chkTipoBicicleta.getValue().toString());
             bici.setTieneCambio(chkCambio.isSelected());
 
+            obs.add(bici);
+            tablaVehiculos.setItems(obs);
             BiciDAO.insertar(bici);
         }
     }
