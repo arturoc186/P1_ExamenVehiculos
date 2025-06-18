@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Ejercicio2Controller">
-
+   <children>
+      <Separator layoutX="297.0" layoutY="11.0" orientation="VERTICAL" prefHeight="316.0" prefWidth="7.0" />
+      <TableView fx:id="tablaVehiculos" layoutX="332.0" layoutY="66.0" prefHeight="258.0" prefWidth="234.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="30.0" text="ID" />
+            <TableColumn fx:id="colMarca" prefWidth="75.0" text="Marca" />
+            <TableColumn fx:id="colModelo" prefWidth="75.0" text="Modelo" />
+            <TableColumn fx:id="colPrecio" prefWidth="50.0" text="Precio" />
+         </columns>
+      </TableView>
+      <Label layoutX="332.0" layoutY="26.0" prefHeight="41.0" prefWidth="234.0" text="Resultados:">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCerrar" layoutX="318.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnCerrarClick" prefHeight="26.0" prefWidth="234.0" text="Cerrar la Ventana" />
+      <Label layoutX="21.0" layoutY="26.0" prefHeight="41.0" prefWidth="234.0" text="Filtros: ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chkTipo" layoutX="20.0" layoutY="90.0" mnemonicParsing="false" text="Activar el FILTRADO por TipoVehiculo" />
+      <CheckBox fx:id="chkPrecio" layoutX="21.0" layoutY="118.0" mnemonicParsing="false" text="Activar el FILTRADO por Precio Vehículo">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </CheckBox>
+      <CheckBox fx:id="chkMarca" layoutX="21.0" layoutY="144.0" mnemonicParsing="false" text="Activar el FILTRADO por Marca Vehículo" />
+      <ComboBox fx:id="cbVehiculo" layoutX="138.0" layoutY="195.0" prefWidth="150.0" />
+      <Label layoutX="21.0" layoutY="59.0" prefHeight="18.0" prefWidth="234.0" text="Los filtros activables son los siguientes:" />
+      <Separator layoutX="22.0" layoutY="175.0" prefHeight="10.0" prefWidth="280.0" />
+      <Label layoutX="31.0" layoutY="200.0" prefHeight="18.0" prefWidth="94.0" text="Tipo de Vehículo:" />
+      <Label layoutX="28.0" layoutY="231.0" text="Precio entre " />
+      <TextField fx:id="fieldMin" layoutX="95.0" layoutY="227.0" prefHeight="26.0" prefWidth="67.0" />
+      <Label layoutX="166.0" layoutY="231.0" prefHeight="18.0" prefWidth="22.0" text="€  y" />
+      <TextField fx:id="fieldMax" layoutX="196.0" layoutY="227.0" prefHeight="26.0" prefWidth="67.0" />
+      <Label layoutX="264.0" layoutY="231.0" text="€" />
+      <ComboBox fx:id="cbMarca" layoutX="147.0" layoutY="262.0" prefHeight="26.0" prefWidth="143.0" />
+      <Label layoutX="33.0" layoutY="267.0" prefHeight="18.0" prefWidth="112.0" text="Marca del Vehículo:" />
+      <Button fx:id="btnBuscar" layoutX="63.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnBuscarClick" prefHeight="26.0" prefWidth="234.0" text="Buscar en la Base de Datos" />
+      <Line endX="491.0" layoutX="109.0" layoutY="339.0" startX="-100.0" />
+   </children>
 </AnchorPane>

@@ -15,6 +15,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.sql.SQLException;
@@ -121,5 +122,13 @@ public class Ejercicio1Controller implements Initializable {
             tablaVehiculos.setItems(obs);
             BiciDAO.insertar(bici);
         }
+    }
+
+    @FXML
+    private Button btnCerrar;
+
+    @FXML
+    void btnCerrarClick(ActionEvent event) {
+        ((Stage) btnCerrar.getScene().getWindow()).close();
     }
 }
